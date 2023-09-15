@@ -1,0 +1,411 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 28 12:51:01 2022
+# Process ID: 18792
+# Current directory: C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.runs/synth_1
+# Command line: vivado.exe -log top_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_demo.tcl
+# Log file: C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.runs/synth_1/top_demo.vds
+# Journal file: C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_demo.tcl -notrace
+Command: synth_design -top top_demo -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15240
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1126.176 ; gain = 37.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_demo' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/new/top_demo.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/fsm.sv:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/fsm.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (1#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/fsm.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'UDL_Count' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/counter.sv:2]
+	Parameter WIDTH bound to: 56 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'flop' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/counter.sv:34]
+	Parameter WIDTH bound to: 56 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flop' (2#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/counter.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'UDL_Count' (3#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/counter.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/flopenr.sv:2]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (4#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/flopenr.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'DES' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1173]
+INFO: [Synth 8-6157] synthesizing module 'GenerateKeys' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'PC1' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:113]
+INFO: [Synth 8-6155] done synthesizing module 'PC1' (5#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:113]
+INFO: [Synth 8-6157] synthesizing module 'PC2' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'PC2' (6#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'GenerateKeys' (7#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'IP' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:404]
+INFO: [Synth 8-6155] done synthesizing module 'IP' (8#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:404]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:383]
+INFO: [Synth 8-6157] synthesizing module 'feistel' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:341]
+INFO: [Synth 8-6157] synthesizing module 'EF' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:285]
+INFO: [Synth 8-6155] done synthesizing module 'EF' (9#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:285]
+INFO: [Synth 8-6157] synthesizing module 'S1_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:549]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:556]
+INFO: [Synth 8-6155] done synthesizing module 'S1_Box' (10#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:549]
+INFO: [Synth 8-6157] synthesizing module 'S2_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:627]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:634]
+INFO: [Synth 8-6155] done synthesizing module 'S2_Box' (11#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:627]
+INFO: [Synth 8-6157] synthesizing module 'S3_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:705]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:712]
+INFO: [Synth 8-6155] done synthesizing module 'S3_Box' (12#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:705]
+INFO: [Synth 8-6157] synthesizing module 'S4_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:783]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:790]
+INFO: [Synth 8-6155] done synthesizing module 'S4_Box' (13#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:783]
+INFO: [Synth 8-6157] synthesizing module 'S5_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:861]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:868]
+INFO: [Synth 8-6155] done synthesizing module 'S5_Box' (14#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:861]
+INFO: [Synth 8-6157] synthesizing module 'S6_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:939]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:946]
+INFO: [Synth 8-6155] done synthesizing module 'S6_Box' (15#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:939]
+INFO: [Synth 8-6157] synthesizing module 'S7_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1017]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1024]
+INFO: [Synth 8-6155] done synthesizing module 'S7_Box' (16#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1017]
+INFO: [Synth 8-6157] synthesizing module 'S8_Box' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1095]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1102]
+INFO: [Synth 8-6155] done synthesizing module 'S8_Box' (17#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1095]
+INFO: [Synth 8-6157] synthesizing module 'SF' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'SF' (18#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:244]
+INFO: [Synth 8-6155] done synthesizing module 'feistel' (19#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:341]
+INFO: [Synth 8-6155] done synthesizing module 'round' (20#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:383]
+INFO: [Synth 8-6157] synthesizing module 'FP' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:477]
+INFO: [Synth 8-6155] done synthesizing module 'FP' (21#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:477]
+INFO: [Synth 8-6155] done synthesizing module 'DES' (22#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv:1173]
+INFO: [Synth 8-6157] synthesizing module 'genParity8' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/top.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'genParity' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/top.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'genParity' (23#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/top.sv:45]
+INFO: [Synth 8-6155] done synthesizing module 'genParity8' (24#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/top.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'top' (25#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/top.sv:1]
+WARNING: [Synth 8-689] width (65) of port connection 'Key' does not match port width (64) of module 'top' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/new/top_demo.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'segment_driver' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/imports/vivado/segment_driver.sv:23]
+	Parameter DIGIT_ZERO bound to: 2'b00 
+	Parameter DIGIT_ONE bound to: 2'b01 
+	Parameter DIGIT_TWO bound to: 2'b10 
+	Parameter DIGIT_THREE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/imports/vivado/segment_driver.sv:63]
+INFO: [Synth 8-6157] synthesizing module 'digit2segments' [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/imports/vivado/digit2segments.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/imports/vivado/digit2segments.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'digit2segments' (26#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/imports/vivado/digit2segments.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'segment_driver' (27#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/imports/vivado/segment_driver.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_demo' (28#1) [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/sources_1/new/top_demo.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1181.762 ; gain = 92.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1181.762 ; gain = 92.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1181.762 ; gain = 92.793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1181.762 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1292.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1292.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1292.738 ; gain = 203.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1292.738 ; gain = 203.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1292.738 ; gain = 203.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'CURRENT_STATE_reg' in module 'segment_driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                             0001 |                               00
+                 UpCount |                             0010 |                               01
+                   Store |                             0100 |                               10
+                FoundKey |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              DIGIT_ZERO |                               00 |                               00
+               DIGIT_ONE |                               01 |                               01
+               DIGIT_TWO |                               10 |                               10
+             DIGIT_THREE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CURRENT_STATE_reg' using encoding 'sequential' in module 'segment_driver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1292.738 ; gain = 203.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   56 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
++---XORs : 
+	   2 Input     48 Bit         XORs := 16    
+	   2 Input     32 Bit         XORs := 16    
++---XORs : 
+	                7 Bit    Wide XORs := 8     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               56 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input  768 Bit        Muxes := 1     
+	   2 Input   56 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 15    
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1292.738 ; gain = 203.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+----------------+---------------+----------------+
+|Module Name | RTL Object     | Depth x Width | Implemented As | 
++------------+----------------+---------------+----------------+
+|S1_Box      | out_bits       | 64x4          | LUT            | 
+|S2_Box      | out_bits       | 64x4          | LUT            | 
+|S3_Box      | out_bits       | 64x4          | LUT            | 
+|S4_Box      | out_bits       | 64x4          | LUT            | 
+|S5_Box      | out_bits       | 64x4          | LUT            | 
+|S6_Box      | out_bits       | 64x4          | LUT            | 
+|S7_Box      | out_bits       | 64x4          | LUT            | 
+|S8_Box      | out_bits       | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s8/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s7/out_bits | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s8/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s7/out_bits | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s8/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s7/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s8/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s7/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s7/out_bits | 64x4          | LUT            | 
+|round       | fk/s1/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
+|round       | fk/s7/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s2/out_bits | 64x4          | LUT            | 
+|round       | fk/s3/out_bits | 64x4          | LUT            | 
+|round       | fk/s6/out_bits | 64x4          | LUT            | 
+|round       | fk/s4/out_bits | 64x4          | LUT            | 
+|round       | fk/s5/out_bits | 64x4          | LUT            | 
++------------+----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1292.738 ; gain = 203.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1292.738 ; gain = 203.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1310.598 ; gain = 221.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1316.957 ; gain = 227.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1316.957 ; gain = 227.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1316.957 ; gain = 227.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1316.957 ; gain = 227.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1316.957 ; gain = 227.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1316.957 ; gain = 227.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |     2|
+|4     |LUT2   |   198|
+|5     |LUT3   |   215|
+|6     |LUT4   |   285|
+|7     |LUT5   |   194|
+|8     |LUT6   |   589|
+|9     |FDCE   |   128|
+|10    |FDPE   |     4|
+|11    |FDRE   |    75|
+|12    |IBUF   |     9|
+|13    |OBUF   |    13|
+|14    |OBUFT  |     7|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1316.957 ; gain = 227.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1316.957 ; gain = 117.012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1316.957 ; gain = 227.988
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1329.055 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1329.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1329.055 ; gain = 240.086
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.runs/synth_1/top_demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_demo_utilization_synth.rpt -pb top_demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 28 12:51:49 2022...

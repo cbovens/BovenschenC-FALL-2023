@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 27 14:31:37 2022
+# Process ID: 15400
+# Current directory: C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18688 C:\Users\cbovens\Desktop\FinalProject\ClassProject\Lab1\Lab1.xpr
+# Log file: C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/vivado.log
+# Journal file: C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/cbovens/Desktop/FinalProject/ClassProject/Lab1/Lab1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/cbovens/Desktop/FinalProject/ClassProject/counter.sv C:/Users/cbovens/Desktop/FinalProject/ClassProject/top.sv C:/Users/cbovens/Desktop/FinalProject/ClassProject/clk_div.sv C:/Users/cbovens/Desktop/FinalProject/ClassProject/control.sv C:/Users/cbovens/Desktop/FinalProject/ClassProject/des.sv C:/Users/cbovens/Desktop/FinalProject/ClassProject/flopenr.sv C:/Users/cbovens/Desktop/FinalProject/ClassProject/fsm.sv C:/Users/cbovens/Desktop/FinalProject/ClassProject/comparator.sv}
+update_compile_order -fileset sources_1

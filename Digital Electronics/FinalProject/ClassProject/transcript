@@ -1,0 +1,106 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do class.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is colli@LAPTOP-92HJJSQM.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is colli@LAPTOP-92HJJSQM.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is colli@LAPTOP-92HJJSQM.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is colli@LAPTOP-92HJJSQM.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt4".  Locker is colli@LAPTOP-92HJJSQM.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 21:13:03 on Apr 24,2022
+# vlog -reportprogress 300 comparator.sv counter.sv fsm.sv flopenr.sv des.sv control.sv top.sv tb_class.sv clk_div.sv 
+# -- Compiling module comparator
+# -- Compiling module UDL_Count
+# -- Compiling module flop
+# -- Compiling module FSM
+# -- Compiling module flopenr
+# -- Compiling module GenerateKeys
+# -- Compiling module PC1
+# -- Compiling module PC2
+# -- Compiling module SF
+# -- Compiling module EF
+# -- Compiling module feistel
+# -- Compiling module round
+# -- Compiling module IP
+# -- Compiling module FP
+# -- Compiling module S1_Box
+# -- Compiling module S2_Box
+# -- Compiling module S3_Box
+# -- Compiling module S4_Box
+# -- Compiling module S5_Box
+# -- Compiling module S6_Box
+# -- Compiling module S7_Box
+# -- Compiling module S8_Box
+# -- Compiling module DES
+# -- Compiling module control
+# -- Compiling module top
+# -- Compiling module genParity
+# -- Compiling module genParity8
+# -- Compiling module stimulus_class
+# -- Compiling module clk_div
+# 
+# Top level modules:
+# 	comparator
+# 	control
+# 	stimulus_class
+# 	clk_div
+# End time: 21:13:03 on Apr 24,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.stimulus_class 
+# Start time: 21:13:03 on Apr 24,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "FSM(fast)".
+# Loading sv_std.std
+# Loading work.stimulus_class(fast)
+# Loading work.top(fast)
+# Loading work.FSM(fast)
+# Loading work.UDL_Count(fast)
+# Loading work.flop(fast)
+# Loading work.flopenr(fast)
+# Loading work.DES(fast)
+# Loading work.GenerateKeys(fast)
+# Loading work.PC1(fast)
+# Loading work.PC2(fast)
+# Loading work.IP(fast)
+# Loading work.round(fast)
+# Loading work.feistel(fast)
+# Loading work.EF(fast)
+# Loading work.S1_Box(fast)
+# Loading work.S2_Box(fast)
+# Loading work.S3_Box(fast)
+# Loading work.S4_Box(fast)
+# Loading work.S5_Box(fast)
+# Loading work.S6_Box(fast)
+# Loading work.S7_Box(fast)
+# Loading work.S8_Box(fast)
+# Loading work.SF(fast)
+# Loading work.FP(fast)
+# Loading work.genParity8(fast)
+# Loading work.genParity(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: colli  Hostname: LAPTOP-92HJJSQM  ProcessID: 29260
+#           Attempting to use alternate WLF file "./wlft60snc0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft60snc0
+# 
+# Found key!
+# 01010101012516f8
+# 
+# ** Note: $stop    : tb_class.sv(47)
+#    Time: 5929035 ns  Iteration: 1  Instance: /stimulus_class
+# Break in Module stimulus_class at tb_class.sv line 47
+# End time: 21:27:16 on Apr 24,2022, Elapsed time: 0:14:13
+# Errors: 0, Warnings: 2
